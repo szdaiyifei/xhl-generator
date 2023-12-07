@@ -1,5 +1,6 @@
 package com.xhl.generator;
 
+import cn.hutool.core.io.FileUtil;
 import com.xhl.model.MainTemplateConfig;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -42,7 +43,9 @@ public class DynamicGenerator {
 //        mainTemplateConfig.setAuthor("xhl");
 //        mainTemplateConfig.setOutputText("求和结果：");
 //        mainTemplateConfig.setLoop(false);
-
+        if (!FileUtil.exist(outputPath)) {
+            FileUtil.touch(outputPath);
+        }
         //生成
         Writer out = new FileWriter(outputPath);
         template.process(model, out);

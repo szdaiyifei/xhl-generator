@@ -2,7 +2,8 @@
 # 自定义一些需要忽略的文件
 .idea
 xhl-generator.iml
-
+target
+generated
 ### Java template
 # Compiled class file
 *.class
@@ -24,6 +25,8 @@ xhl-generator.iml
 *.zip
 *.tar.gz
 *.rar
+
+
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*

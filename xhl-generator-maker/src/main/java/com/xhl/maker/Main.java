@@ -1,7 +1,7 @@
-package com.xhl;
+package com.xhl.maker;
 
 
-import com.xhl.cli.CommandExecutor;
+import com.xhl.maker.cli.CommandExecutor;
 
 /**
  * 调用入口
