@@ -13,7 +13,9 @@ public class Main {
 //        args = new String[]{"generate", "-l", "-a", "-o"};
 //        args = new String[]{"config"};
 //        args = new String[]{"list"};
+        //创建调用者对象
         CommandExecutor commandExecutor = new CommandExecutor();
+        //执行命令
         commandExecutor.doExecute(args);
     }
 }
